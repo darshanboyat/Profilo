@@ -9,15 +9,18 @@ import Contact from './Components/Contact'
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <Home />
-      <Aboutme/>
-      <WhatIDo/>
-      <Resume/>
-      <Portfolio/>
-      <Contact/>
-    </div>
+    <>
+      <div className="App none lg:block">
+        <Sidebar />
+        <Home />
+        <Aboutme />
+        <WhatIDo />
+        {/* <Resume /> */}
+        <Portfolio />
+        <Contact />
+      </div>
+      <div className="block lg:block">This site isn't for Mobile devices</div>
+    </>
   );
 }
 

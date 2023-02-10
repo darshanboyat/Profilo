@@ -4,13 +4,14 @@
 }
 
 .wrapper{
-    height: 6vh;
-    overflow: hidden;  
+    height: 9vh;
+    overflow: hidden; 
 }
 
 .textTypist{
     position: relative;
     top: 0;
+    height: min-content;
     animation: slider 12s steps(4) infinite;
 }
 .textTypist::after{
@@ -29,7 +30,7 @@
 }
 @keyframes slider {
     100%{
-        top: -12rem;
+        top: -15rem;
     }
 }
 @keyframes typing {

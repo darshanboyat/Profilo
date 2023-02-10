@@ -1,12 +1,14 @@
 import React from 'react'
 import style from './Aboutme.module.css'
+import cv from '../../Assets/cv.pdf'
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 const Index = () => {
     return (
         <div className='my-24 ml-96 text-left pr-20'>
             <h1 id="about-me" className={`text-7xl heading font-bold py-24 ml-96 ${style.heading}`}>About Me</h1>
-            
+
             <div data-aos="zoom-in-down" className="flex">
                 <div className="w-3/4">
                     <p className={`text-2xl font-bold my-8`}>I'm <span className={`text-slate-600`}>Darshan Boyat</span>, a Frontend Developer</p>
@@ -18,7 +20,7 @@ const Index = () => {
                     </p>
                 </div>
                 <div data-aos="zoom-in-down" className="flex flex-col items-center justify-center w-4/12 h-auto">
-                    <table className={`h-auto justify-left `}>
+                    {/* <table className={`h-auto justify-left `}>
                         <tr className={`my-2 border-b-2`}>
                             <td> <b>Name:- &nbsp;</b> Darshan Boyat </td>
                         </tr>
@@ -31,7 +33,10 @@ const Index = () => {
                         <tr className={`my-2 border-b-2`}>
                             <td> <b>From:- &nbsp;</b> Sehore, 466001 [M. P] India </td>
                         </tr>
-                    </table>
+                    </table> */}
+
+                    <a className='outline outline-cyan-500 px-4 py-4 rounded-xl font-bold' href={cv} download={true}>DOWNLOAD RESUME <FileDownloadIcon/></a>
+
                 </div>
             </div>
             <div className="mt-5 border-b-2 pb-8">
