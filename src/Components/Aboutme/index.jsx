@@ -35,16 +35,16 @@ const Index = () => {
                         </tr>
                     </table> */}
 
-                    <a className='outline outline-cyan-500 px-4 py-4 rounded-xl font-bold' href={cv} download={true}>DOWNLOAD RESUME <FileDownloadIcon/></a>
+                    <a className='outline outline-cyan-500 px-4 py-4 rounded-xl font-bold' href={cv} download="DarshanBoyatCV">DOWNLOAD RESUME <FileDownloadIcon/></a>
 
                 </div>
             </div>
             <div className="mt-5 border-b-2 pb-8">
                 <table>
                     <tr className='text-center'>
-                        <td data-aos="zoom-in" className='border-r-2 text-xl px-24 text-slate-500'><span className='font-bold text-black'> 2.8 </span><br /> Year Exterience</td>
+                        <td data-aos="zoom-in" className='border-r-2 text-xl px-24 text-slate-500'><span className='font-bold text-black'> 2.8 </span><br /> Year Experience</td>
                         <td data-aos="zoom-in" className='border-r-2 text-xl px-24 text-slate-500'><span className='font-bold text-black'> 3 </span><br />Certificates</td>
-                        <td data-aos="zoom-in" className='text-xl px-24 text-slate-500'><span className='font-bold text-black'> 5 </span><br />Projects</td>
+                        <td data-aos="zoom-in" className='text-xl px-24 text-slate-500'><span className='font-bold text-black'> 10+ </span><br />Projects</td>
                     </tr>
                 </table>
             </div>

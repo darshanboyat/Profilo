@@ -13,7 +13,7 @@ const Index = () => {
                     typingDelay={20}
                     eraseSpeed={20}
                     eraseDelay={20}
-                    text={["Software-Developer", "React.JS-Developer", "Freelancer......."]}
+                    text={["Software-Developer", "React.JS-Developer", "MERN-Stack..."]}
                     style={{fontSize: 80}}
                 />
             </div>

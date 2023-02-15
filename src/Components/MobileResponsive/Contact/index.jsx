@@ -1,9 +1,9 @@
 import React from 'react'
-import style from './Contact.module.css'
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SendIcon from '@mui/icons-material/Send';
+import Heading from '../Heading'
 
 
 import Card from "./ContactCard"
@@ -11,8 +11,8 @@ import Card from "./ContactCard"
 const Index = () => {
     return (
         <div id="contact" >
-            <h1 id="cv" className={`ml-60 text-7xl ${style.heading} mt-40 pb-10`}>Get in Touch</h1>
-            <div className="flex ml-96">
+            <Heading heading="Get in Touch"/>
+            <div className="flex flex-col mb-8">
                 {/* <div className="text-left ml-96 my-8">
                     <p className='text-3xl font-semibold'>ADDRESS</p>
                     <p className='text-2xl font-semibold'><LocationOnIcon /> &nbsp; 618, Brain Inventory 6th floor Shekhar Central Old Palasia Indore,<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;452001 [M. P], India</p> <br />

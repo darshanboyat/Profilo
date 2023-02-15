@@ -4,7 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import style from './Portfolio.module.css'
+import Heading from '../Heading'
+// import style from './Portfolio.module.css'
 
 export default function MultiActionAreaCard() {
     const projects = [
@@ -40,8 +41,8 @@ export default function MultiActionAreaCard() {
         }]
     return (
         <>
-            <h1 id="portfolio" className={`text-7xl heading font-semibold py-24 ml-96 ${style.heading}`}>Portfolio</h1>
-            <div className="ml-96 flex flex-wrap border-b-2 pb-8">
+            <Heading heading="Portfolio"/>
+            <div className="flex flex-wrap border-b-2 pb-8">
                 {
                     projects.map(item => <>
                         <a href={item.link} target="_blank">
@@ -54,7 +55,7 @@ export default function MultiActionAreaCard() {
                                         alt="green iguana"
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: 'bold'}}>
                                             {item.title}
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary" sx={{minHeight: 160}}>
